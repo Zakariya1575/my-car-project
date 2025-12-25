@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DIY Car Parts - Affordable Parts & Tutorials</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#3B82F6"/>
+            <path d="M16 8L8 12V20L16 24L24 20V12L16 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>DIY Car Parts</span>
+        </a>
+
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="parts.html">Parts Catalog</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="tools.html">Tools Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Save Money on Car Repairs</h1>
+          <p class="hero-subtitle">Get affordable car parts and learn to install them yourself with our step-by-step video tutorials</p>
+          <div class="hero-buttons">
+            <a href="parts.html" class="btn btn-primary">Browse Parts</a>
+            <a href="tutorials.html" class="btn btn-secondary">Watch Tutorials</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <div class="stat-number">500+</div>
+              <div class="stat-label">Quality Parts</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">200+</div>
+              <div class="stat-label">Video Guides</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">50%</div>
+              <div class="stat-label">Average Savings</div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=800&h=600&fit=crop" alt="Car Repair">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">Why Choose DIY Car Parts?</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Affordable Prices</h3>
+          <p>Get quality parts at up to 50% off dealership prices. We source directly from manufacturers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎥</div>
+          <h3>Video Tutorials</h3>
+          <p>Step-by-step video guides for every part. Learn from professionals and DIY experts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔧</div>
+          <h3>Tool Recommendations</h3>
+          <p>Know exactly what tools you need before starting. We provide complete tool lists.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">✅</div>
+          <h3>Quality Guaranteed</h3>
+          <p>All parts come with warranty. We only sell OEM or high-quality aftermarket parts.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3>Fast Shipping</h3>
+          <p>Free shipping on orders over $50. Most parts arrive within 3-5 business days.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Expert Support</h3>
+          <p>Questions? Our team of mechanics is here to help via chat, email, or phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Parts Section -->
+  <section class="popular-parts">
+    <div class="container">
+      <h2 class="section-title">Popular Parts</h2>
+      <div class="parts-grid">
+        <a href="parts.html" class="part-card">
+          <div class="part-image">
+            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400&h=300&fit=crop" alt="Brake Pads">
+            <span class="part-badge">Best Seller</span>
+          </div>
+          <div class="part-info">
+            <h3>Brake Pads Set</h3>
+            <p class="part-description">Premium ceramic brake pads for smooth, quiet stops</p>
+            <div class="part-meta">
+              <span class="part-price">$49.99</span>
+              <span class="part-original">$89.99</span>
+            </div>
+            <div class="part-tutorial">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M6 4l6 4-6 4V4z"/>
+              </svg>
+              Tutorial Available
+            </div>
+          </div>
+        </a>
+
+        <a href="parts.html" class="part-card">
+          <div class="part-image">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop" alt="Oil Filter">
+          </div>
+          <div class="part-info">
+            <h3>Oil Filter</h3>
+            <p class="part-description">High-efficiency oil filter for maximum engine protection</p>
+            <div class="part-meta">
+              <span class="part-price">$12.99</span>
+              <span class="part-original">$24.99</span>
+            </div>
+            <div class="part-tutorial">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M6 4l6 4-6 4V4z"/>
+              </svg>
+              Tutorial Available
+            </div>
+          </div>
+        </a>
+
+        <a href="parts.html" class="part-card">
+          <div class="part-image">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop" alt="Air Filter">
+          </div>
+          <div class="part-info">
+            <h3>Air Filter</h3>
+            <p class="part-description">Improve performance and fuel efficiency</p>
+            <div class="part-meta">
+              <span class="part-price">$19.99</span>
+              <span class="part-original">$35.99</span>
+            </div>
+            <div class="part-tutorial">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M6 4l6 4-6 4V4z"/>
+              </svg>
+              Tutorial Available
+            </div>
+          </div>
+        </a>
+
+        <a href="parts.html" class="part-card">
+          <div class="part-image">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop" alt="Spark Plugs">
+            <span class="part-badge">New</span>
+          </div>
+          <div class="part-info">
+            <h3>Spark Plugs Set</h3>
+            <p class="part-description">Platinum spark plugs for better ignition</p>
+            <div class="part-meta">
+              <span class="part-price">$34.99</span>
+              <span class="part-original">$59.99</span>
+            </div>
+            <div class="part-tutorial">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M6 4l6 4-6 4V4z"/>
+              </svg>
+              Tutorial Available
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="section-cta">
+        <a href="parts.html" class="btn btn-primary">View All Parts</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Find Your Part</h3>
+          <p>Browse our catalog or search for the specific part you need for your vehicle</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Watch Tutorial</h3>
+          <p>Learn how to install it with our detailed video guide and tool recommendations</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Order & Install</h3>
+          <p>Get your part delivered fast and install it yourself to save money</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Saving?</h2>
+        <p>Join thousands of DIY mechanics who save money on car repairs every day</p>
+        <a href="parts.html" class="btn btn-white">Get Started Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>DIY Car Parts</h4>
+          <p>Your trusted source for affordable car parts and expert repair tutorials.</p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+              </svg>
+            </a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+              </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L2 22h20L12 2z"/>
+                <path d="M12 2L2 22h20L12 2z"/>
+                <path d="M12 2L2 22h20L12 2z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="parts.html">Parts Catalog</a></li>
+            <li><a href="tutorials.html">Video Tutorials</a></li>
+            <li><a href="tools.html">Tools Guide</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#shipping">Shipping Info</a></li>
+            <li><a href="#returns">Returns Policy</a></li>
+            <li><a href="#warranty">Warranty</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>Email: support@diycarparts.com</li>
+            <li>Phone: 1-800-DIY-CARS</li>
+            <li>Hours: Mon-Fri 8AM-6PM EST</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 DIY Car Parts. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/main.ts" type="module"></script>
+</body>
+</html>

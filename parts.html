@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parts Catalog - DIY Car Parts</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-content">
+        <a href="index.html" class="logo">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="6" fill="#3B82F6"/>
+            <path d="M16 8L8 12V20L16 24L24 20V12L16 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>DIY Car Parts</span>
+        </a>
+        
+        <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="parts.html" class="active">Parts Catalog</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="tools.html">Tools Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Parts Catalog</h1>
+      <p>Browse our extensive selection of quality auto parts at unbeatable prices</p>
+    </div>
+  </section>
+
+  <!-- Parts Gallery -->
+  <section class="parts-catalog">
+    <div class="container">
+      <div class="catalog-filters">
+        <div class="filter-group">
+          <label>Category:</label>
+          <select class="filter-select">
+            <option>All Parts</option>
+            <option>Brakes</option>
+            <option>Engine</option>
+            <option>Filters</option>
+            <option>Electrical</option>
+            <option>Suspension</option>
+          </select>
+        </div>
+        <div class="filter-group">
+          <label>Sort by:</label>
+          <select class="filter-select">
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Most Popular</option>
+            <option>Highest Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="parts-gallery">
+        <div class="part-item">
+          <div class="part-image-wrap">
+            <img src="https://images.unsplash.com/photo-1625047509168-a7026f36de04?w=400&h=300&fit=crop" alt="Brake Pads">
+            <span class="badge">Best Seller</span>
+          </div>
+          <div class="part-details">
+            <h3>Brake Pads Set</h3>
+            <p>Premium ceramic brake pads for smooth, quiet stops</p>
+            <div class="rating">★★★★★ (124 reviews)</div>
+            <div class="price-row">
+              <span class="current-price">$49.99</span>
+              <span class="old-price">$89.99</span>
+            </div>
+            <button class="btn btn-primary add-to-cart" onclick="alert('Added to cart!')">Add to Cart</button>
+            <a href="tutorials.html" class="tutorial-link">📹 Watch Installation Tutorial</a>
+          </div>
+        </div>
+
+        <div class="part-item">
+          <div class="part-image-wrap">
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=400&h=300&fit=crop" alt="Oil Filter">
+          </div>
+          <div class="part-details">
+            <h3>Oil Filter</h3>
+            <p>High-efficiency oil filter for maximum engine protection</p>
+            <div class="rating">★★★★★ (89 reviews)</div>
+            <div class="price-row">
+              <span class="current-price">$12.99</span>
+              <span class="old-price">$24.99</span>
+            </div>
+            <button class="btn btn-primary add-to-cart" onclick="alert('Added to cart!')">Add to Cart</button>
+            <a href="tutorials.html" class="tutorial-link">📹 Watch Installation Tutorial</a>
+          </div>
+        </div>
+
+        <div class="part-item">
+          <div class="part-image-wrap">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?w=400&h=300&fit=crop" alt="Air Filter">
+          </div>
+          <div class="part-details">
+            <h3>Air Filter</h3>
+            <p>Improve performance and fuel efficiency</p>
+            <div class="rating">★★★★☆ (67 reviews)</div>
+            <div class="price-row">
+              <span class="current-price">$19.99</span>
+              <span class="old-price">$35.99</span>
+            </div>
+            <button class="btn btn-primary add-to-cart" onclick="alert('Added to cart!')">Add to Cart</button>
+            <a href="tutorials.html" class="tutorial-link">📹 Watch Installation Tutorial</a>
+          </div>
+        </div>
+
+        <div class="part-item">
+          <div class="part-image-wrap">
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=400&h=300&fit=crop" alt="Spark Plugs">
+            <span class="badge new">New</span>
+          </div>
+          <div class="part-details">
+            <h3>Spark Plugs Set</h3>
+            <p>Platinum spark plugs for better ignition</p>
+            <div class="rating">★★★★★ (156 reviews)</div>
+            <div class="price-row">
+              <span class="current-price">$34.99</span>
+              <span class="old-price">$59.99</span>
+            </div>
+            <button class="btn btn-primary add-to-cart" onclick="alert('Added to cart!')">Add to Cart</button>
+            <a href="tutorials.html" class="tutorial-link">📹 Watch Installation Tutorial</a>
+          </div>
+        </div>
+
+        <div class="part-item">
+          <div class="part-image-wrap">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=400&h=300&fit=crop" alt="Battery">
+          </div>
+          <div class="part-details">
+            <h3>Car Battery</h3>
+            <p>Reliable power for your vehicle</p>
+            <div class="rating">★★★★★ (203 reviews)</div>
+            <div class="price-row">
+              <span class="current-price">$89.99</span>
+              <span class="old-price">$149.99</span>
+            </div>
+            <button class="btn btn-primary add-to-cart" onclick="alert('Added to cart!')">Add to Cart</button>
+            <a href="tutorials.html" class="tutorial-link">📹 Watch Installation Tutorial</a>
+          </div>
+        </div>
+
+        <div class="part-item">
+          <div class="part-image-wrap">
+            <img src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=400&h=300&fit=crop" alt="Wiper Blades">
+          </div>
+          <div class="part-details">
+            <h3>Wiper Blades</h3>
+            <p>All-season windshield wipers</p>
+            <div class="rating">★★★★☆ (45 reviews)</div>
+            <div class="price-row">
+              <span class="current-price">$24.99</span>
+              <span class="old-price">$39.99</span>
+            </div>
+            <button class="btn btn-primary add-to-cart" onclick="alert('Added to cart!')">Add to Cart</button>
+            <a href="tutorials.html" class="tutorial-link">📹 Watch Installation Tutorial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-col">
+          <h4>DIY Car Parts</h4>
+          <p>Your trusted source for affordable car parts and expert repair tutorials.</p>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+            <a href="https://twitter.com" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg></a>
+            <a href="https://instagram.com" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="https://youtube.com" target="_blank"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="parts.html">Parts Catalog</a></li>
+            <li><a href="tutorials.html">Video Tutorials</a></li>
+            <li><a href="tools.html">Tools Guide</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Shipping Info</a></li>
+            <li><a href="#">Returns Policy</a></li>
+            <li><a href="#">Warranty</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>Email: support@diycarparts.com</li>
+            <li>Phone: 1-800-DIY-CARS</li>
+            <li>Hours: Mon-Fri 8AM-6PM EST</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 DIY Car Parts. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/main.ts" type="module"></script>
+</body>
+</html>
